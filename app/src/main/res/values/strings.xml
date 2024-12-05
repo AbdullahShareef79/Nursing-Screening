@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">University of Trier Robot</string>
+    <string name="welcome_message">Welcome to the University of Trier</string>
+    <string name="task_description">This is a robot designed to act as a nurse. Please follow the instructions.</string>
+    <string name="start">Start</string>
+    <string name="exit">Exit</string>
+    <string name="university_logo">University Logo</string>
+    <string name="title_activity_main">title</string>
+    <string name="action_settings">Settings</string>
+</resources>
