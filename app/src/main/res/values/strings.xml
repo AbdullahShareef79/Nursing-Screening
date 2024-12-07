@@ -1,10 +1,16 @@
 <resources>
-    <string name="app_name">University of Trier Robot</string>
-    <string name="welcome_message">Welcome to the University of Trier</string>
-    <string name="task_description">This is a robot designed to act as a nurse. Please follow the instructions.</string>
-    <string name="start">Start</string>
-    <string name="exit">Exit</string>
+
+    <string name="welcome_message">Willkommen in unserer Anwendung</string>
+    <string name="task_description">Bitte fahren Sie mit dem nächsten Schritt fort, um Ihre Daten einzugeben.</string>
+    <string name="start">Starten</string>
+    <string name="exit">Beenden</string>
     <string name="university_logo">University Logo</string>
     <string name="title_activity_main">title</string>
     <string name="action_settings">Settings</string>
+    <string name="exit_confirmation_title">Beenden</string>
+    <string name="exit_confirmation_message">Möchten Sie die Anwendung wirklich schließen?</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+
+    <string name="fragebogen_f_r_neue_patienten">Fragebogen für Neue Patienten</string>
 </resources>

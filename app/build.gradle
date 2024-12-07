@@ -36,4 +36,5 @@ dependencies {
     implementation 'com.aldebaran:qisdk-design:1.4.8'
 
 
+
 }
