@@ -1,77 +1,34 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondActivity">
+    tools:context=".SummaryActivity">
 
     <TextView
-        android:id="@+id/labelSummary"
+        android:id="@+id/thankYouMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Zusammenfassung der Eingaben"
+        android:text="@string/herzlichen_dank"
         android:textSize="22sp"
         android:textStyle="bold"
-        android:layout_marginBottom="24dp"
         android:gravity="center"
-        android:textColor="#1A237E"/>
-
-    <TextView
-        android:id="@+id/textName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name: "
-        android:textSize="18sp"
-        android:layout_marginBottom="16dp"/>
-
-    <TextView
-        android:id="@+id/textBirthDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Geburtsdatum: "
-        android:textSize="18sp"
-        android:layout_marginBottom="16dp"/>
-
-    <TextView
-        android:id="@+id/textDoctor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ehemaliger Hausarzt: "
-        android:textSize="18sp"
-        android:layout_marginBottom="16dp"/>
-
-    <TextView
-        android:id="@+id/textConditions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bekannte Erkrankungen: "
-        android:textSize="18sp"
-        android:layout_marginBottom="16dp"/>
-
-    <TextView
-        android:id="@+id/textMedications"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Regelmäßige Medikation: "
-        android:textSize="18sp"
-        android:layout_marginBottom="16dp"/>
-
-    <TextView
-        android:id="@+id/textSignature"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Unterschrift: "
-        android:textSize="18sp"
-        android:layout_marginBottom="16dp"/>
+        android:textColor="#1A237E"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonExit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
 
     <Button
-        android:id="@+id/buttonBackToForm"
+        android:id="@+id/buttonExit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Zurück zum Formular"
-        android:layout_marginTop="32dp"
+        android:text="@string/benden"
+        android:backgroundTint="#FF5252"
         android:textColor="#FFFFFF"
-        android:backgroundTint="#2196F3"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true" />
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
 </android.support.constraint.ConstraintLayout>

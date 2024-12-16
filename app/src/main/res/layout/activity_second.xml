@@ -20,28 +20,33 @@
 
             <!-- Header -->
             <TextView
-                android:id="@+id/headerTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/fragebogen_f_r_neue_patienten"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:layout_marginBottom="24dp"
-                android:textColor="#1A237E" />
-
-            <!-- Name -->
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name:"
+                android:text="@string/heutiges_datum"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/inputDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tt_mm_jjjj"
+                android:inputType="date"
+                android:layout_marginBottom="16dp"
+                android:textSize="16sp" />
+            <!-- Name -->
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
                 android:textSize="18sp"
                 android:layout_marginBottom="8dp" />
 
             <EditText
+                android:id="@+id/inputName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Bitte Ihren Namen eingeben"
+                android:hint="@string/bitte_ihren_namen_eingeben"
                 android:inputType="textPersonName"
                 android:layout_marginBottom="16dp"
                 android:textSize="16sp" />
@@ -49,7 +54,7 @@
                 android:id="@+id/labelFirstName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vorname:"
+                android:text="@string/vorname"
                 android:textSize="18sp"
                 android:layout_marginBottom="8dp" />
 
@@ -57,7 +62,7 @@
                 android:id="@+id/inputFirstName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Bitte Ihren Vornamen eingeben"
+                android:hint="@string/bitte_ihren_vornamen_eingeben"
                 android:inputType="textPersonName"
                 android:layout_marginBottom="16dp"
                 android:textSize="16sp" />
@@ -68,7 +73,7 @@
                 android:id="@+id/labelOccupation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Beruf:"
+                android:text=   "@string/beruf"
                 android:textSize="18sp"
                 android:layout_marginBottom="8dp" />
 
@@ -76,7 +81,7 @@
                 android:id="@+id/inputOccupation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Bitte Ihren Beruf eingeben"
+                android:hint="@string/bitte_ihren_beruf_eingeben"
                 android:inputType="text"
                 android:layout_marginBottom="16dp"
                 android:textSize="16sp" />
@@ -86,13 +91,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Geburtsdatum:"
+                android:text="@string/geburtsdatum"
                 android:textSize="18sp"
                 android:layout_marginBottom="8dp" />
             <EditText
+                android:id="@+id/birthDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="TT/MM/JJJJ"
+                android:hint="@string/tt_mm_jjjj"
                 android:inputType="date"
                 android:layout_marginBottom="16dp"
                 android:textSize="16sp" />
@@ -101,13 +107,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Anschrift:"
+                android:text="@string/anschrift"
                 android:textSize="18sp"
                 android:layout_marginBottom="8dp" />
             <EditText
+                android:id="@+id/address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Bitte Ihre Anschrift eingeben"
+                android:hint="@string/bitte_ihre_anschrift_eingeben"
                 android:inputType="textPostalAddress"
                 android:layout_marginBottom="16dp"
                 android:textSize="16sp" />
@@ -116,13 +123,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Telefonnummer:"
+                android:text="@string/telefonnummer"
                 android:textSize="18sp"
                 android:layout_marginBottom="8dp" />
             <EditText
+                android:id="@+id/phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Bitte Ihre Telefonnummer eingeben"
+                android:hint="@string/bitte_ihre_telefonnummer_eingeben"
                 android:inputType="phone"
                 android:layout_marginBottom="16dp"
                 android:textSize="16sp" />
@@ -131,74 +139,128 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Krankenversicherung:"
+                android:text="@string/krankenversicherung"
                 android:textSize="18sp"
                 android:layout_marginBottom="8dp" />
             <EditText
+                android:id="@+id/healthInsurance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Bitte Ihre Krankenversicherung eingeben"
+                android:hint="@string/bitte_ihre_krankenversicherung_eingeben"
                 android:inputType="text"
                 android:layout_marginBottom="16dp"
                 android:textSize="16sp" />
+
+            <!-- Question Label -->
             <TextView
                 android:id="@+id/labelAllergies"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Leiden Sie an Allergien? Wenn ja, welche?"
+                android:text="@string/leiden_sie_an_allergien_wenn_ja_welche"
                 android:textSize="18sp"
                 android:layout_marginBottom="8dp" />
 
+            <!-- Checkbox for Ja -->
+            <CheckBox
+                android:id="@+id/checkBoxJa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ja"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Input field for writing, initially hidden -->
             <EditText
                 android:id="@+id/inputAllergies"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Bitte Allergien eingeben"
+                android:hint="@string/bitte_allergien_eingeben"
                 android:inputType="text"
-                android:layout_marginBottom="16dp"
+                android:padding="12dp"
+
                 android:textSize="16sp" />
 
+            <!-- Checkbox for Nein -->
+            <CheckBox
+                android:id="@+id/checkBoxNein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nein"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/was_ist_ihr_hausarzt"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp" />
+            <EditText
+                android:id="@+id/inputHausarzt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/bitte_hausarzt_eingeben"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="16dp"
+                android:textSize="16sp" />
             <!-- Known Conditions -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sind bei Ihnen folgende Erkrankungen bekannt? Bitte auswählen:"
+                android:text="@string/sind_bei_ihnen_folgende_erkrankungen_bekannt_bitte_ausw_hlen"
                 android:textSize="18sp"
                 android:layout_marginBottom="8dp" />
             <CheckBox
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rücken-/Gelenkerkrankungen"
+                android:text="@string/r_cken_gelenkerkrankungen"
                 android:layout_marginBottom="8dp"
                 android:textSize="16sp" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Herz-Kreislauf-Erkrankungen"
+                android:text="@string/herz_kreislauf_erkrankungen"
                 android:layout_marginBottom="8dp"
                 android:textSize="16sp" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lungenerkrankungen"
+                android:text="@string/lungenerkrankungen"
                 android:layout_marginBottom="8dp"
                 android:textSize="16sp" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Magen-Darm-Erkrankungen"
+                android:text="@string/magen_darm_erkrankungen"
                 android:layout_marginBottom="8dp"
                 android:textSize="16sp" />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Andere:"
+                android:text="@string/andere"
                 android:layout_marginBottom="16dp"
                 android:textSize="16sp" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blase_nieren"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stoffwechselerkrankungen"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/krebserkrankungen"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp" />
             <EditText
+                android:id="@+id/otherConditions"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Andere Erkrankungen eingeben"
+                android:hint="@string/andere_erkrankungen_eingeben"
                 android:layout_marginBottom="16dp"
                 android:textSize="16sp" />
 
@@ -207,7 +269,7 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Besitzen Sie einen Impfausweis?"
+                android:text="@string/besitzen_sie_einen_impfausweis"
                 android:textSize="18sp"
                 android:layout_marginBottom="8dp" />
             <RadioGroup
@@ -219,18 +281,18 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ja" />
+                    android:text="@string/ja" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nein" />
+                    android:text="@string/nein" />
             </RadioGroup>
 
             <!-- Medications -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nehmen Sie regelmäßig Medikamente ein?"
+                android:text="@string/nehmen_sie_regelm_ig_medikamente_ein"
                 android:textSize="18sp"
                 android:layout_marginBottom="8dp" />
             <RadioGroup
@@ -242,11 +304,11 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ja" />
+                    android:text="@string/ja" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nein" />
+                    android:text="@string/nein" />
             </RadioGroup>
 
             <!-- Submit -->
@@ -260,7 +322,7 @@
                     android:id="@+id/submitButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Abschicken"
+                    android:text="@string/abschicken"
                     android:backgroundTint="#4CAF50"
                     android:textColor="#FFFFFF" />
             </LinearLayout>
@@ -275,7 +337,7 @@
                     android:id="@+id/backButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Zurück"
+                    android:text="@string/zur_ck"
                     android:layout_marginEnd="8dp"
                     android:textColor="#FFFFFF"
                     android:backgroundTint="#2196F3"
@@ -285,7 +347,7 @@
                     android:id="@+id/exitButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Beenden"
+                    android:text="@string/beenden"
                     android:layout_marginEnd="8dp"
                     android:textColor="#FFFFFF"
                     android:backgroundTint="#FF5252"
