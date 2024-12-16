@@ -62,7 +62,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## Contact
 For questions, suggestions, or collaboration inquiries, please contact:
 - **Developer**: Abdullah Shareef
-- **Email**: abdullah@example.com
+- **Email**: abdullahshareef7945512@gmail.com
 
 ---
 **University of Trier | Pepper Robot Project | Nursery Screening**
